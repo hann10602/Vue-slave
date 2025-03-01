@@ -8,6 +8,8 @@ const props = defineProps({
   },
 })
 
+const {} = props
+
 const formFields = reactive({
   firstName: '',
   lastName: '',

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onUpdated, ref } from 'vue'
-import ComputedChild from './ComputedChild.vue'
 
 const user = ref({
   firstName: 'John',
@@ -24,5 +23,5 @@ onUpdated(() => {
 <template>
   <button @click="handleChangeFirstName" class="bg-yellow-200 text-black">Change first name</button>
   <p>{{ user.firstName }}</p>
-  <ComputedChild :user="value" />
+  <!-- <ComputedChild :user="value" /> -->
 </template>
